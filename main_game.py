@@ -1,5 +1,7 @@
 player = ""
-my_pokemon = [] 
+my_pokemon = []
+coins = 100
+inventory = []
 
 bulbasaur = {
     "name": "Bulbasaur",
@@ -31,6 +33,12 @@ squirtle = {
         {"name": "Tackle", "power": 40, "type": "Normal"}]
 }
 
+#Shop Items
+potion = {
+    "name": "potion",
+    "value": 30,
+    "Hp": 10
+}
 
 
 def start_game():
@@ -51,6 +59,26 @@ def view_pokemon(pokemon):
     for move in pokemon["moves"]:
         print(f"- {move['name']} (Power: {move['power']}, Type: {move['type']})")
     print("---------------------------")
+
+def shop():
+
+    global coins
+
+    while True:
+        print("\n--- SHOP ---")
+        print(f"You Have {coins} Coins!")
+        print("1. Potion - 30 coins")
+        print("2. Back to Menu")
+
+        choice = input("n\>")
+
+        if choice == "1" and coins >= 30:
+            inventory.append[potion]
+            coins = coins - 30
+            print("\nYou Bought a Potion!!")
+
+        elif choice == "2":
+            menu()
 
 def menu():
     while True:
@@ -101,7 +129,7 @@ def choose_stater_pokemon():
         print("\nYou have chosen Squirtle as your Starter Pokemon!")
         my_pokemon.append(squirtle)
         menu()
-        
+
     else:
         print("Wrong input. Try again!")
         choose_stater_pokemon()
