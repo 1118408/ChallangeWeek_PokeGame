@@ -1,0 +1,50 @@
+body {
+    background-color: aqua;
+    margin: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.VS {
+    margin-top: 500px;
+}
+
+.poke1 {
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 500;
+}
+
+.poke2 {
+    position: absolute;
+    margin-left: 2000px;
+    margin-top: 500;
+}
+
+.poke1_box {
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 400;
+
+    padding: 20px;
+    border-radius: 6px 6px 6px 6px;
+
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 100%);
+}
+
+.poke2_box {
+    position: absolute;
+    margin-left: 2000px;
+    margin-top: 400;
+
+    padding: 20px;
+    border-radius: 6px 6px 6px 6px;
+
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 100%);
+}

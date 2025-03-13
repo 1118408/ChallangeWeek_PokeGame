@@ -6,6 +6,7 @@ def start_game():
     print("This is a battle simulator where you will be playing round type based game.")
     print("Your journey begins now!")
     choose_stater_pokemon()
+
 def menu():
     while True:
         print("\n--- MENU ---")
@@ -29,10 +30,6 @@ def menu():
             print("Thank you for playing. Till next time!")
             break
 
-
-
-
-
 def choose_stater_pokemon():
     print("\nWhich starter Pokemon would you like to choose?")
     print("!. Charmander")
@@ -53,6 +50,5 @@ def choose_stater_pokemon():
     else:
         print("Wrong input. Try again!")
         choose_stater_pokemon()
-
 
 start_game()
