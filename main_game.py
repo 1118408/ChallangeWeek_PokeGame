@@ -67,13 +67,14 @@ def shop():
     while True:
         print("\n--- SHOP ---")
         print(f"You Have {coins} Coins!")
+        print(f"Your Items:2 {inventory}")
         print("1. Potion - 30 coins")
         print("2. Back to Menu")
 
         choice = input("n\>")
 
         if choice == "1" and coins >= 30:
-            inventory.append[potion]
+            inventory.append(potion)
             coins = coins - 30
             print("\nYou Bought a Potion!!")
 
